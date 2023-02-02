@@ -92,8 +92,28 @@ body {
 }
 
 /* Card */
+.row {
+  margin: 0 -5px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .row h2 {
   color: #EEEEEE;
+}
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: left;
 }
 .card img {
   border-top-left-radius: 10%;
@@ -107,7 +127,7 @@ body {
   color: #EEEEEE;
   font-size: 20px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 .movies-info {
   color: #EEEEEE;
